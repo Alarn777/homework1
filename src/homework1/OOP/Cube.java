@@ -1,4 +1,3 @@
 package homework1.OOP;
 
-public class Hello {
-}
+public class Cube{}
