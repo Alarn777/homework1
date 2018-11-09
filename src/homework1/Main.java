@@ -7,7 +7,36 @@ public class Main {
         InnerLoopsDrawingShapesRun();
         MultiplicationTable();
         FactorialExerciseRun();
+        SqaresSumRun(3);         //change the input to check different solutions
+        RecursivePowerRun(2,3);
+        NumsForLoopRun();
+        FibonacciExerciseRun();
+    }
 
+    private static void FibonacciExerciseRun() {
+        FibonacciExercise temp = new FibonacciExercise();
+        temp.Fibonacci();
+        System.out.println();
+    }
+
+    private static void NumsForLoopRun() {
+        NumsForLoop temp = new NumsForLoop();
+        temp.printNums();
+        System.out.println();
+    }
+
+    private static void RecursivePowerRun(int x,int y) {
+        RecursivePower temp = new RecursivePower();
+        System.out.println("Input is: "+ x + "*" + y);
+        System.out.println("Output is: " + temp.recPower(x,y));
+        System.out.println();
+    }
+
+    private static void SqaresSumRun(int n) {
+        SqaresSum temp = new SqaresSum();
+        System.out.println("Input is: 3");
+        System.out.println("Output is: " + temp.SumFunc(n));
+        System.out.println();
     }
 
     private static void FactorialExerciseRun() {

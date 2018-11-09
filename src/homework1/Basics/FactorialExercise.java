@@ -11,18 +11,11 @@ public class FactorialExercise {
 
     private static long factorial(long value)
     {
-
         long result = 1;
-
-        while(value >=1 )
-        {
+        while(value >=1 ) {
             result *= value;
-
-
             value--;
         }
-
-
         return result;
     }
 }
