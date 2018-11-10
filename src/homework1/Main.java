@@ -1,8 +1,13 @@
 package homework1;
 import homework1.Basics.*;
+import homework1.StringArray.*;
+
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
+        //Basics
         SimpleComputationRun();
         InnerLoopsDrawingShapesRun();
         MultiplicationTable();
@@ -11,11 +16,43 @@ public class Main {
         RecursivePowerRun(2,3);
         NumsForLoopRun();
         FibonacciExerciseRun();
+
+
+
+
+
+        //Arrays and Strings
+        int[] arr =  {2,4,12,56,62};
+        ArrayRecursiveSumRun(arr,3);
+
+        LovelyFlowersRun();
+
+    }
+
+    private static void LovelyFlowersRun() {
+        LovelyFlowers temp1 = new LovelyFlowers("Rose", Color.RED, true);
+        LovelyFlowers temp2 = new LovelyFlowers("Azalea", Color.WHITE, false);
+        LovelyFlowers temp3 = new LovelyFlowers("Orchid", Color.PINK, true);
+        LovelyFlowers temp4 = new LovelyFlowers("Lilies", Color.YELLOW, true);
+        LovelyFlowers[] tempArray = {temp1,temp2,temp3,temp4};
+
+        for (LovelyFlowers temp : tempArray){
+            System.out.println(temp);
+        }
+        System.out.println();
+    }
+
+    private static void ArrayRecursiveSumRun(int[] arr,int n) {
+        ArrayRecursiveSum temp = new ArrayRecursiveSum();
+        System.out.print("In Array you gave sum of first " + n + " numbers is: ");
+        System.out.println(temp.recSumArr(arr,n));
+//        System.out.println();
     }
 
     private static void FibonacciExerciseRun() {
         FibonacciExercise temp = new FibonacciExercise();
         temp.Fibonacci();
+        System.out.println();
         System.out.println();
     }
 
