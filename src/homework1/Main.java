@@ -46,7 +46,7 @@ public class Main {
         ArrayRecursiveSum temp = new ArrayRecursiveSum();
         System.out.print("In Array you gave sum of first " + n + " numbers is: ");
         System.out.println(temp.recSumArr(arr,n));
-//        System.out.println();
+        System.out.println();
     }
 
     private static void FibonacciExerciseRun() {
@@ -64,7 +64,7 @@ public class Main {
 
     private static void RecursivePowerRun(int x,int y) {
         RecursivePower temp = new RecursivePower();
-        System.out.println("Input is: "+ x + "*" + y);
+        System.out.println("Input is: "+ x + "^" + y);
         System.out.println("Output is: " + temp.recPower(x,y));
         System.out.println();
     }
