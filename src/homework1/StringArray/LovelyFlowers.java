@@ -43,8 +43,4 @@ public class LovelyFlowers {
             else
                 return "Name: " + name + ", Color: " + color.toString() + ", Smells Bad!";
         }
-
-
-
-
 }

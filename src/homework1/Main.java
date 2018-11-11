@@ -27,6 +27,13 @@ public class Main {
 
         LovelyFlowersRun();
 
+        MyArrayClassRun(4,3.1);
+
+    }
+    private static void MyArrayClassRun(int a, double b) {
+        MyArrayClass temp = new MyArrayClass(a,b);
+        System.out.println("Avg :" + temp.Average());
+        System.out.println(temp);
     }
 
     private static void LovelyFlowersRun() {
