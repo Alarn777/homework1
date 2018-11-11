@@ -22,18 +22,37 @@ public class Main {
 
 
         //Arrays and Strings
-        int[] arr =  {2,4,12,56,62};
+        int[] arr =  {2,4,12,56,62,75,81};
         ArrayRecursiveSumRun(arr,3);
 
         LovelyFlowersRun();
-
         MyArrayClassRun(4,3.1);
 
+
+        PalindromeString("alla");
+        RandomStatsRun();
+
+        RecursiveBinarySearch temp = new RecursiveBinarySearch();
+        temp.findInt(arr,75);
     }
+
+    private static void RandomStatsRun() {
+        RandomStats temp = new RandomStats();
+        temp.test();
+        System.out.println();
+    }
+
+    private static void PalindromeString(String input) {
+        PalindromeString temp = new PalindromeString();
+        temp.isAPalindrome(input);
+        System.out.println();
+    }
+
     private static void MyArrayClassRun(int a, double b) {
         MyArrayClass temp = new MyArrayClass(a,b);
         System.out.println("Avg :" + temp.Average());
         System.out.println(temp);
+        System.out.println();
     }
 
     private static void LovelyFlowersRun() {
