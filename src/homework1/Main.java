@@ -44,9 +44,14 @@ public class Main {
 
         SimpleSortingRun();
 
+        SimpleStringBufferUsageRun();
+
+    }
+
+    private static void SimpleStringBufferUsageRun() {
         SimpleStringBufferUsage temp = new SimpleStringBufferUsage();
         temp.bufferUsage();
-
+        System.out.println();
     }
 
     private static void SimpleSortingRun() {
