@@ -24,7 +24,7 @@ public class RecursiveBinarySearch {
             if(find > array[start+middle])
                 return find(array,start+middle,tempEnd,find);
             else
-                return find(array,tempStart,start+middle,find);
+                return find(array,tempStart,start,find);
 
 
         }

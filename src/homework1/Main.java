@@ -3,6 +3,7 @@ import homework1.Basics.*;
 import homework1.StringArray.*;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
 
@@ -32,8 +33,54 @@ public class Main {
         PalindromeString("alla");
         RandomStatsRun();
 
+        RecursiveBinarySearchRun(arr,75);
+        RecursiveBinarySearchRun(arr,11);
+
+        SimpleBinarySearchRun();
+
+        SimpleNumbersLoopRun();
+
+        SimpleSequentialSearchRun();
+
+        SimpleSortingRun();
+
+        SimpleStringBufferUsage temp = new SimpleStringBufferUsage();
+        temp.bufferUsage();
+
+    }
+
+    private static void SimpleSortingRun() {
+        SimpleSorting temp = new SimpleSorting();
+        temp.sort();
+        System.out.println();
+    }
+
+    private static void SimpleSequentialSearchRun() {
+        SimpleSequentialSearch temp = new SimpleSequentialSearch();
+        String[] arg;
+        arg =  new String[1];
+        arg[0] = "121";
+        System.out.println("Looking for: " + arg[0]);
+        System.out.println();
+        temp.find(arg);
+        System.out.println();
+    }
+
+    private static void SimpleNumbersLoopRun() {
+        SimpleNumbersLoop temp = new SimpleNumbersLoop();
+        temp.printSimpleNumbers();
+    }
+
+    private static void SimpleBinarySearchRun() {
+        SimpleBinarySearch temp = new SimpleBinarySearch();
+        temp.testAlg();
+        System.out.println();
+    }
+
+    private static void RecursiveBinarySearchRun(int[] arr,int a) {
         RecursiveBinarySearch temp = new RecursiveBinarySearch();
-        temp.findInt(arr,75);
+        temp.findInt(arr,a);
+        System.out.println();
     }
 
     private static void RandomStatsRun() {
