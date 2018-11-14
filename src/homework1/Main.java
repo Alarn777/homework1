@@ -46,6 +46,15 @@ public class Main {
 
         SimpleStringBufferUsageRun();
 
+
+        SimpleTextualSortingRun();
+
+    }
+
+    private static void SimpleTextualSortingRun() {
+        SimpleTextualSorting temp = new SimpleTextualSorting();
+        temp.func();
+        System.out.println();
     }
 
     private static void SimpleStringBufferUsageRun() {
